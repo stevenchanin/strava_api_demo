@@ -1,0 +1,22 @@
+<h1>Rides for rider <%= @rider_id %></h1>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @rides.each do |ride| %>
+      <tr>
+        <td><%= ride.id %></td>
+        <td><%= ride.name %></td>
+        <td>
+          <%= link_to 'Show', ride_path(ride.id) %>
+          <%= link_to 'Efforts', efforts_ride_path(ride.id) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

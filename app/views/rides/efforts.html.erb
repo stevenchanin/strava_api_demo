@@ -1,0 +1,21 @@
+<h1>Efforts contained in ride <%= @ride_id %></h1>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Segement</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @efforts.each do |effort| %>
+      <tr>
+        <td><%= effort.id %></td>
+        <td><%= effort.segment.name %></td>
+        <td>
+          <%= link_to 'Show' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

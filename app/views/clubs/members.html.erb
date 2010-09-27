@@ -4,6 +4,7 @@
     <tr>
       <th>Id</th>
       <th>Name</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -11,6 +12,9 @@
       <tr>
         <td><%= member.id %></td>
         <td><%= member.name %></td>
+        <td>
+          <%= link_to 'Rides', rides_path(:athlete_id => member.id)%>
+        </td>
       </tr>
     <% end %>
   </tbody>

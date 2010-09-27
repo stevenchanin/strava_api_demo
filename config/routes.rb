@@ -1,4 +1,10 @@
 StravaDemo::Application.routes.draw do
+  resources :rides do
+    member do
+      get 'efforts'
+    end
+  end
+
   # get "clubs/index"
   # post "clubs/index"
   # get "clubs/show", :as => :club

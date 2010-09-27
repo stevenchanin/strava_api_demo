@@ -1,0 +1,43 @@
+<h1>Ride Info</h1>
+<p><b>Rider:</b><br />
+  <%= @ride.athlete.name %>
+</p>
+<p><b>Name:</b><br />
+  <%= @ride.name %>
+</p>
+<p><b>Start Date:</b><br />
+  <%= @ride.start_date %>
+</p>
+<p><b>Location:</b><br />
+  <%= @ride.location %>
+</p>
+<p><b>Location:</b><br />
+  <%= @ride.location %>
+</p>
+<p><b>Distance:</b><br />
+  <%= @ride.distance %>
+</p>
+<p><b>Elevation Gain:</b><br />
+  <%= @ride.elevation_gain %>
+</p>
+<p><b>Elapsed Time:</b><br />
+  <%= @ride.elapsed_time %>
+</p>
+<p><b>Moving Time:</b><br />
+  <%= @ride.moving_time %>
+</p>
+<p><b>Maximum Speed:</b><br />
+  <%= @ride.maximum_speed %>
+</p>
+<p><b>Average Speed:</b><br />
+  <%= @ride.average_speed %>
+</p>
+<p><b>Average Watts:</b><br />
+  <%= @ride.average_watts %>
+</p>
+<p><b>Bike:</b><br />
+  <%= @ride.bike.name %>
+</p>
+
+<br />
+<%= link_to 'Back', rides_url(:athlete_id => @ride.athlete.id) %>
