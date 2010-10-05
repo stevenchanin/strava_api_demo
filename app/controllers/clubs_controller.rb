@@ -22,6 +22,6 @@ class ClubsController < ApplicationController
 
   private
   def setup
-    @s = Strava::Base.new
+    @s = StravaApi::Base.new
   end
 end
